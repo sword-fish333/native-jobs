@@ -21,7 +21,7 @@ export const fetchJobs =(region,callback)=> async dispatch=> {
 
     try {
         // let zipcode = await reverseGeocode(region);
- let res=await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${region.latitude},${region.longitude}&key=AIzaSyD57xvw_uGJdF0mIVcKlZKMyrFhofqGzcM`);
+ let res=await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${region.latitude},${region.longitude}&key=API_KEY`);
      let results=res.data.results[0].address_components;
         let zipcode='';
         results.forEach(res=>{
