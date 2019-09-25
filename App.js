@@ -26,7 +26,14 @@ import  ReviewScreen from './screens/ReviewScreen';
                                 settings:{screen:SettingsScreen}
                             })
                       }
-                    })
+                    },{
+                      defaultNavigationOptions:{
+                          tabBarPosition:'bottom',
+                          tabBarOptions:{
+                              labelStyle:{fontSize:12}
+                          }
+                      },
+                  })
             }
         },{
             defaultNavigationOptions:{

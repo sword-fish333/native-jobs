@@ -1,7 +1,7 @@
 import React ,{Component} from 'react';
 import  {connect} from 'react-redux';
 import {View, Text,Platform,ScrollView,Linking} from 'react-native';
-import {Button} from 'react-native-elements';
+import {Button,Icon} from 'react-native-elements';
 import {MapView} from 'react-native-maps';
 class ReviewScreen extends Component{
         static navigationOptions=({navigation})=>{
@@ -14,7 +14,10 @@ class ReviewScreen extends Component{
                 }} title="Settings"/>),
                 style:{
                     marginTop:Platform.OS==='android' ? 24:0
-                }
+                },
+                tabBarIcon:({tintColor})=><Icon name={'favorite'} size={30} color={tintColor}/>
+
+
             }
 
         }
